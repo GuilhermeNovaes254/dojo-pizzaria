@@ -50,20 +50,6 @@ const pizzaController = {
         res.send(pizzaModel.listarPedidos(total.cliente))
     }
 
-
 }
 
 module.exports = pizzaController
-
-// Funcionalidades para continuar
-
-// Pizza
-
-// Adicionar uma pizza nova
-// Buscar uma pizza por nome
-// Buscar Pizzas por categoria
-// Pedido
-
-// Adicionar pedido
-// Listar todos os pedidos
-// Total deve conter o valor das pizzas que o pedido contém

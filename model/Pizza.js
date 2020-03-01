@@ -95,7 +95,13 @@ const listarPedidos = () =>{
 }
 
 const total = (cliente) =>{
-    
+    for(pedido of pedidos){
+        if(cliente == pedido.cliente){
+            return `Valor total do cliente "${cliente}" = ${pedido.valor} `;
+        }else{
+            return `Cliente não consta em nosa base de dados`
+        }
+    }    
 }
 
 module.exports = {listarPizzas, adicionar, buscarNome, buscarCategoria, fazPedido, listarPedidos, total}
